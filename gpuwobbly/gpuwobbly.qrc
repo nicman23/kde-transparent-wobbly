@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/effects/gpuwobbly/">
+        <file alias="shaders/blur.frag">../shared/shaders/blur.frag</file>
+        <file>shaders/composite.frag</file>
+        <file>shaders/composite.vert</file>
+        <file alias="shaders/fullscreen.vert">../shared/shaders/fullscreen.vert</file>
+        <file>shaders/physics.frag</file>
+    </qresource>
+</RCC>

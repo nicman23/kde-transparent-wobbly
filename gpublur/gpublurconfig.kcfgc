@@ -1,0 +1,5 @@
+File=gpublur.kcfg
+ClassName=GpuBlurConfig
+NameSpace=KWin
+Singleton=true
+Mutators=true

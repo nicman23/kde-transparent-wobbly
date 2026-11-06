@@ -1,0 +1,10 @@
+set(gpublur_SOURCES main.cpp gpublur.cpp gpublur.qrc)
+kconfig_add_kcfg_files(gpublur_SOURCES gpublurconfig.kcfgc)
+kcoreaddons_add_plugin(gpublur SOURCES ${gpublur_SOURCES} INSTALL_NAMESPACE "kwin/effects/plugins")
+target_link_libraries(gpublur PRIVATE KWin::kwin KF6::ConfigGui KDecoration3::KDecoration XCB::XCB)
+
+set(kwin_gpublur_config_SOURCES gpublur_config.cpp)
+ki18n_wrap_ui(kwin_gpublur_config_SOURCES gpublur_config.ui)
+kconfig_add_kcfg_files(kwin_gpublur_config_SOURCES gpublurconfig.kcfgc)
+qt_add_dbus_interface(kwin_gpublur_config_SOURCES ${KWIN_EFFECTS_INTERFACE} kwineffects_interface)
+gpu_add_effect_config(kwin_gpublur_config ${kwin_gpublur_config_SOURCES})

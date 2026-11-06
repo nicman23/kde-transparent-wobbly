@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/effects/gpublur/">
+        <file alias="shaders/blur.frag">../shared/shaders/blur.frag</file>
+        <file alias="shaders/fullscreen.vert">../shared/shaders/fullscreen.vert</file>
+        <file>shaders/onscreen.frag</file>
+        <file>shaders/onscreen.vert</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,10 @@
+set(gpuwobbly_SOURCES main.cpp gpuwobbly.cpp gpuwobbly.qrc)
+kconfig_add_kcfg_files(gpuwobbly_SOURCES gpuwobblyconfig.kcfgc)
+kcoreaddons_add_plugin(gpuwobbly SOURCES ${gpuwobbly_SOURCES} INSTALL_NAMESPACE "kwin/effects/plugins")
+target_link_libraries(gpuwobbly PRIVATE KWin::kwin KF6::ConfigGui)
+
+set(kwin_gpuwobbly_config_SOURCES gpuwobbly_config.cpp)
+ki18n_wrap_ui(kwin_gpuwobbly_config_SOURCES gpuwobbly_config.ui)
+kconfig_add_kcfg_files(kwin_gpuwobbly_config_SOURCES gpuwobblyconfig.kcfgc)
+qt_add_dbus_interface(kwin_gpuwobbly_config_SOURCES ${KWIN_EFFECTS_INTERFACE} kwineffects_interface)
+gpu_add_effect_config(kwin_gpuwobbly_config ${kwin_gpuwobbly_config_SOURCES})

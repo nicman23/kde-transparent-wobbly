@@ -1,0 +1,5 @@
+File=gpuwobbly.kcfg
+ClassName=GpuWobblyConfig
+NameSpace=KWin
+Singleton=true
+Mutators=true

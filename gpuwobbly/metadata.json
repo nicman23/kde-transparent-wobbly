@@ -1,0 +1,10 @@
+{
+    "KPlugin": {
+        "Category": "Appearance",
+        "Description": "Deform windows while they are moving, with the physics on the GPU and a frosted background",
+        "EnabledByDefault": false,
+        "License": "GPL",
+        "Name": "GPU Wobbly Windows"
+    },
+    "X-KDE-ConfigModule": "kwin_gpuwobbly_config"
+}

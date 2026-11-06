@@ -1,0 +1,10 @@
+{
+    "KPlugin": {
+        "Category": "Appearance",
+        "Description": "Blurs the background behind semi-transparent windows that ask for it, on the GPU; leaves windows being moved alone. Replaces Blur, do not enable both.",
+        "EnabledByDefault": false,
+        "License": "GPL",
+        "Name": "GPU Blur"
+    },
+    "X-KDE-ConfigModule": "kwin_gpublur_config"
+}
